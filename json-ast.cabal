@@ -1,7 +1,7 @@
 name:
   json-ast
 version:
-  0.1
+  0.2
 synopsis:
   Universal JSON AST datastructure
 description:
@@ -41,7 +41,7 @@ library
     Haskell2010
   other-modules:
   exposed-modules:
-    JSON.AST
+    JSONAST
   build-depends:
     -- data:
     vector >= 0.10 && < 0.12,

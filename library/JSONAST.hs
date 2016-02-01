@@ -1,4 +1,4 @@
-module JSON.AST where
+module JSONAST where
 
 import Prelude
 import Data.Data (Data, Typeable)
