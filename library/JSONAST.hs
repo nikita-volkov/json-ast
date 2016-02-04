@@ -13,7 +13,7 @@ import Data.Scientific (Scientific)
 -- 
 -- Note that this datastructure is identical to \"aeson\" Value.
 -- Until \"aeson\" implements the dependency on \"json-ast\",
--- you can use "Unsafe.Coerce.unsafeCoerce" to work with it,
+-- you can use 'Unsafe.Coerce.unsafeCoerce' to work with it,
 -- thus sidestepping the redundant conversions.
 data JSON =
   Object !(HashMap Text JSON) |
