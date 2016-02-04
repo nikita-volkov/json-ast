@@ -1,3 +1,6 @@
+-- |
+-- This module contains no namespace conflicts with Prelude,
+-- so it can be imported unqualified.
 module JSONAST where
 
 import Prelude
@@ -16,10 +19,10 @@ import Data.Scientific (Scientific)
 -- you can use 'Unsafe.Coerce.unsafeCoerce' to work with it,
 -- thus sidestepping the redundant conversions.
 data JSON =
-  Object !(HashMap Text JSON) |
-  Array !(Vector JSON) |
-  String !Text |
-  Number !Scientific |
-  Bool !Bool |
-  Null
+  JSON_Object !(HashMap Text JSON) |
+  JSON_Array !(Vector JSON) |
+  JSON_String !Text |
+  JSON_Number !Scientific |
+  JSON_Bool !Bool |
+  JSON_Null
   deriving (Eq, Read, Show, Typeable, Data)
