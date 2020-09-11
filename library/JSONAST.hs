@@ -16,7 +16,7 @@ import Data.Scientific (Scientific)
 JSON value abstract syntax tree.
 
 It is intended to be used instead of \"aeson\" @Value@ as lingua franca
-for JSON libraries, removing the need to depend on \"aeson\" when all you need
+for JSON libraries, removing the need to depend on \"aeson\" when all that's needed
 is a representation of a JSON value.
 
 Note that this datastructure is representationally identical to \"aeson\" @Value@.

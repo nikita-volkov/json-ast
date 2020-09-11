@@ -19,17 +19,15 @@ description:
   .
   1. To boost the competition between JSON libraries.
   Instead of nudging the community to implement its ideas by patching \"aeson\".
+  After all, competition is the driving force of evolution and hence progress.
   .
   2. Due to so much patching already happening to \"aeson\",
-  its lack of clearly set goals, questionable design and
+  its loss of focus, some questionable design and
   strive for backwards compatibility, it's becoming bloated.
   IOW, it's trying to be "everything JSON" but with no careful design or plan and
   it's tied by its past.
   With these restrictions it's impossible for \"aeson\" to ever become a polished
   library.
-  .
-  3. It is not healthy for the ecosystem to be tied by a large monopoly.
-  Health comes from competition.
 homepage:
   https://github.com/nikita-volkov/json-ast 
 bug-reports:
