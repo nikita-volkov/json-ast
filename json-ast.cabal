@@ -6,7 +6,7 @@ synopsis:
   Universal JSON AST datastructure
 description:
   This library provides only a data-type representing the JSON value tree.
-  It is intended to be used as a shared data-type for all kinds of JSON libraries.
+  It is intended to be used as a shared data-type by all kinds of JSON libraries.
   Same as we have the \"xml-types\" package for libraries dealing with XML.
   .
   Now, since the \"aeson\" @Value@ has been serving this purpose for years,
@@ -15,17 +15,21 @@ description:
   This means that we can use those types interchangeably,
   making it possible to gradually migrate.
   .
-  ** Why displace the \"aeson\" @Value@?
+  ===Why displace the \"aeson\" @Value@?
   .
   1. To boost the competition between JSON libraries.
-  Instead of forcing the community to implement their ideas by patching \"aeson\".
+  Instead of nudging the community to implement its ideas by patching \"aeson\".
   .
   2. Due to so much patching already happening to \"aeson\",
   its lack of clearly set goals, questionable design and
   strive for backwards compatibility, it's becoming bloated.
-  It's trying to be "everything JSON" but without a design or a plan.
+  IOW, it's trying to be "everything JSON" but with no careful design or plan and
+  it's tied by its past.
+  With these restrictions it's impossible for \"aeson\" to ever become a polished
+  library.
   .
-  3. It is not healthy for the ecosystem to depend on heavy libraries.
+  3. It is not healthy for the ecosystem to be tied by a large monopoly.
+  Health comes from competition.
 homepage:
   https://github.com/nikita-volkov/json-ast 
 bug-reports:
