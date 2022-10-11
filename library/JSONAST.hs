@@ -2,7 +2,7 @@
 This module will never contain any namespace conflicts with Prelude,
 so it can be imported unqualified.
 -}
-module JsonAst where
+module JSONAST where
 
 import Prelude
 import Data.Data (Data, Typeable)
@@ -24,11 +24,11 @@ Meaning that conversions between them can be made at 0 performance cost,
 (using the 'Unsafe.Coerce.unsafeCoerce' function).
 The \"aeson-json-ast\" package provides a typed interface for such conversions.
 -}
-data Json =
-  ObjectJson !(HashMap Text Json) |
-  ArrayJson !(Vector Json) |
-  StringJson !Text |
-  NumberJson !Scientific |
-  BoolJson !Bool |
-  NullJson
+data JSON =
+  JSON_Object !(HashMap Text JSON) |
+  JSON_Array !(Vector JSON) |
+  JSON_String !Text |
+  JSON_Number !Scientific |
+  JSON_Bool !Bool |
+  JSON_Null
   deriving (Eq, Read, Show, Typeable, Data)
